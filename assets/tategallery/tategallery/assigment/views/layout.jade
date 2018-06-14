@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
+
+  body(style="background-color: lightgrey;")
+    script(src="/javascripts/index.js")
+    script(src="/javascripts/jquery-2.2.4.min.js")
+    script(src="/javascripts/highcharts.js")
+    script(src="/javascripts/bootstrap.min.js")
+
+    div#nav_bar
+        ul
+            li
+                a(href="/" name="homepage" class="nav-menu") Home
+            li
+                a(href="/artists" name="artist" class="artist") Artists
+            li
+                a(href="/artworks" name="artworks" class="artworks") Artworks
+            li
+                a(href="/settings" name="artworks" class="settings") Settings
+
+block content

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<head>
+<title>The Mystery Machine</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script type ="text/javascript">
+	function toss(){
+		//random variables between 0 and 3
+		random1 = Math.floor((Math.random() * 3));
+		random2 = Math.floor((Math.random() * 3));
+		random3 = Math.floor((Math.random() * 3));
+
+		//get the images
+		name1 = "money" + random1 + ".jpg";
+		name2 = "money" + random2 + ".jpg";
+		name3 = "money" + random3 + ".jpg";
+		
+		//create a new image object
+		var firstgo = new Image();
+		firstgo.src = name1;
+		
+		var secondgo = new Image();
+		secondgo.src = name2;
+		
+		var thirdgo = new Image();
+		thirdgo.src = name3;
+		
+		//assign to the image object created
+		document.getElementById('money2').src=firstgo.src;
+		document.getElementById('money1').src=secondgo.src;
+		document.getElementById('money50').src=thirdgo.src;
+		
+		//set the bet cost, in this case its 75c per bet placed
+		var betCost=0.75;
+		//the total is the starting credit you get when the game begins
+		var total=200.00;
+		
+		//if the first option is selected....
+		if (document.getElementById("option1").checked==true){
+			//take away 75c
+			total=total-betCost;
+			//if the three images are the same then you win
+			if(random1==1 && random2==1 && random3==1){
+				//add 9 to the total
+				total =total+9;
+				//change the appearence
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			} 
+			else if (random1==2&&random2==2 &&random3==2){
+			total =total+1.25;
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			}
+			else if (random1==0&&random2==0&&random3==0) {
+				total =total+36;
+				document.getElementById("toss").innerHTML="You Win <br/>  your total is &euro;"+total;
+			}else{
+				//otherwise you lose 
+				total=total;
+				document.getElementById("toss").innerHTML="You Lose  <br/> your total is &euro;"+total;
+			}
+		}
+		else if (document.getElementById("option2").checked==true){
+			//first and second image = to 2 euro image
+			total =total-betCost;
+			if(random1==0&&random2==0&&random3!=0){
+				total =total+16;
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			}
+			//first and second image = to 1 euro image
+			else if(random1==1&&random2==1&&random3!=1){
+				total =total+4;
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			}
+			//first and second image = to50 centimage
+			else if(random1==2&&random2==2&&random3!=2){
+			total =total+1;
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			}
+			//second and third image = 2euro image
+			else if(random2==0&&random3==0&&random1!=0){
+				total =total +16;
+				document.getElementById("toss").innerHTML="You Win  <br/> your total is &euro;"+total;
+			}
+			//second and third image = 1euro image
+			else if(random2==1&&random3==1&&random1!=1){
+				total =total+4;
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			}
+			//second and third image = 50 cent image
+			else if(random2==2&&random3==2&&random1!=2){
+				total =total+16;
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			}
+			//first and third image = 50 cent image
+			else if(random1==0&&random3==0&&random2!=0){
+				total =total+16;
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			}
+			//first and third image = 50 cent image
+			else if(random1==1&&random3==1&&random2!=1){
+				total =total+4;
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			}
+			//first and third image = 50 cent image
+			else if(random1==2&&random3==2&&random2!=2){
+				total =total+1;
+				document.getElementById("toss").innerHTML="You Win <br/>  your total is &euro;"+total;
+			}
+			else{
+				document.getElementById("toss").innerHTML="You Lose <br/> your total is &euro;"+total;
+			}
+		}
+		else if(document.getElementById("option3").checked==true){
+			total =total-betCost;
+			if(random1==0&&random2==1&random3==2){
+			total =total+10;
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			}
+			else if(random1==0&&random2==2&random3==1){
+				total =total+9.25;
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			}
+			else if(random1==1&&random2==0&random3==2){;
+				total =total+8.50
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			}
+			else if(random1==1&&random2==2&random3==0){
+				total =total+7.25;
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			}
+			else if(random1==2&&random2==1&random3==0){
+				total =total+7;
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			}
+			else if(random1==2&&random2==0&random3==1){
+				total =total+5;
+				document.getElementById("toss").innerHTML="You Win <br/> your total is &euro;"+total;
+			}
+			else{
+				total =total-8;
+				document.getElementById("toss").innerHTML="You Lose <br/> your total is <br/>&euro;"+total;
+			}
+		}
+		else{
+			//if nothing is selected
+			alert("select at least 1 option");
+		}
+		//if you lose all your money then the game is over
+		if(total==0){
+			alert("game over");
+		}
+	}//end of function
+</script>
+</head>
+<body>
+
+<div id ="main-content">
+	<h1>The Mystery Machine</h1>
+	<h2>What is your mystery result? </h2>
+	<div id ="images">
+	<img src="money0.jpg" id="money2"  alt="money"/>
+	<img src="money1.jpg" id="money1"  alt="money"/>
+	<img src="money2.jpg" id="money50"  alt="money"/>
+	</div>
+	
+	<h3>Place your bet here!!</h3>
+	<label> </label>
+	<input type = "checkbox" id ="option1">3 numbers the same</input><br/>
+	<input type = "checkbox" id ="option2">2 numbers the same</input><br/>
+	<input type = "checkbox" id ="option3">0 numbers the same</input><br/>
+	
+	<button type="button" onclick="toss()">Play</button>
+			<div id="toss"> Can you beat the game?! <br/> Your Balance is &euro;200.
+			</div>
+
+</div>
+</body>
+</html>

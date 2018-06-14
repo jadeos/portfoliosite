@@ -1,0 +1,109 @@
+body {
+
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+.panel-default h1{
+    margin-left: 35%;
+}
+
+#container{
+    background-color: darkgrey;
+
+}
+
+#charts{
+    width:100%;
+
+
+}
+
+#bluetheme{
+    background-image: url('/images/ocean.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    height:auto;
+
+}
+#bluetheme .tategallery{
+    background-color: royalblue;
+    width:80%;
+    margin-left:10%;
+    color:black;
+
+}
+#bluetheme .tategallery a{
+   color: black;
+
+}
+
+
+#hidden{
+    display:none;
+}
+#default{
+    background-color:lightgrey;
+}
+a {
+  color: blue;
+}
+
+ .tategallery{
+        background-color: darkgrey;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        padding-top: 0.5%;
+        margin-bottom: 2%;
+
+    }
+
+
+.tategallery  img {
+  margin-top: -4%;
+  margin-left: 65%;
+  padding-bottom:3%;
+
+}
+
+#nav_bar
+{
+  background-color: dimgrey;
+  padding: 1%;
+  font-weight: bold;
+  border-radius: 2px;
+    margin-top:1%;
+}
+#nav_bar ul {
+  list-style: none;
+  margin-left:70%;
+}
+
+#nav_bar ul li{
+  display: inline;
+  padding-left: 4%;
+
+}
+#nav_bar ul li:hover{
+  opacity: 0.5;
+
+}
+
+#nav_bar ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.images{
+    width: 25%;
+    border: 2px solid black;
+    display:inline;
+
+}
+.images:hover{
+    width: 25.5%;
+
+}
+
+
+

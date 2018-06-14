@@ -1,0 +1,612 @@
+body {
+	font-family: "Trebuchet MS",Arial;
+	font-size: 14px;
+	background-color: #000000;
+	color: red;
+	height:auto;
+
+
+}
+
+
+#users {
+	padding-top: 10px;
+	height: 10px;
+	margin-top: -105px;
+	width: 500px;
+	margin-left: 320px;
+	text-align: center;
+	font-size: 12px;
+}
+
+#users img{
+
+	border:2px solid black;
+	height:70px;
+	margin-top: -50px;
+	font-size: 12px;
+}
+
+
+
+
+div.banner{
+    heigth:150px;
+    width:1140px;
+}
+
+div.sign_in
+{
+    border: thick blue;
+    border-height : 200 px;
+    width: 450px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+
+}
+
+div.divider_1
+{
+    width:10px;
+    height:auto;
+    display:inline-block;
+}
+
+.padding-top-10{
+    padding-top:10px;
+}
+
+.padding-bottom-10{
+    padding-bottom:10px;
+}
+
+.padding-left-10{
+    padding-left:525px;
+}
+
+
+
+
+
+
+
+
+a {
+	color: #FFF;
+}
+
+a:hover {
+	color: #B9AA81;
+}
+
+
+input, textarea, select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+
+#signup_form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 360px;
+	
+	font-size: 16px;
+	
+
+}
+
+.panel-title {
+	text-align: center;
+	font-weight:bold;
+}
+
+
+.h3 {
+	text-align: center;
+}
+
+
+
+#signup_form .heading {
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	color: #B9AA81;
+}
+
+#signup_form form {
+	
+	background-color: #B9AA81;
+	padding: 10px;
+
+	
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+
+}
+
+
+
+#signup_form form label {
+	font-weight: bold;
+	color: #11151E;
+}
+
+#signup_form form input[type=text],input[type=password] {
+	width: 316px;
+	font-weight: bold;
+	padding: 8px;
+	
+	
+	border: 1px solid #FFF;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+#signup_form form input[type=submit] {
+	display: block;
+	margin: auto;
+	width: 200px;
+	font-size: 18px;
+	background-color: #FFF;
+	border: 1px solid #BBB;
+
+}
+
+#signup_form form input[type=submit]:hover {
+	border-color: #000;
+}
+
+#signup_form .error {
+	font-size: 13px;
+	color: #690C07;
+	font-style: italic;
+}
+
+#footer{
+	border:5px solid #000000;
+	bottom:0px;
+	text-align:center;
+}
+
+.about {
+	height: 1000px;
+	width: 1200px;
+}
+
+body {
+	font-family: "Trebuchet MS",Arial;
+	font-size: 14px;
+	background-color: white;
+	color: black;
+}
+
+
+#users {
+	padding-top: 10px;
+	height: 100px;
+	margin-top: 100px;
+	width: 500px;
+	margin-left: 320px;
+	margin-right:320px;
+	text-align: center;
+	font-size: 8px;
+}
+
+#users img{
+
+	border:2px solid black;
+	height:80px;
+	margin-top: -50px;
+	font-size: 12px;
+}
+
+#homeContainer {
+	height:600px;
+	width:1000px;
+	text-align: center;
+	float: right;
+}
+
+
+div.banner{
+	heigth:150px;
+	width:1140px;
+}
+
+div.sign_in
+{
+	border: thick blue;
+	border-height : 200 px;
+	width: 450px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+
+}
+#filtersearch {
+    background-color: lightgray;
+    border: 2px;
+    height: 220px;
+    width: 1140px;
+    margin-left: 110px;
+    margin-bottom: 12px;
+}
+
+.display_playgrounds{
+    height:auto;
+    width:1140px;
+    margin-left:110px;
+
+}
+
+#filtersearch strong{
+	text-align:center;
+	padding-top:10px;
+
+}
+#filtersearch input{
+	margin-left:20%;
+	margin-top:0px;
+
+}
+
+#facilitysearch {
+	margin-left:800px;
+	margin-top:10px;
+}
+
+#ckrow1{
+	width:25%;
+	margin-left:0px;
+	float:left;
+}
+#ckrow2{
+	width:25%;
+	float:left;
+	margin-left:0px;
+	text-align:left;
+}
+
+#ckrow3{
+	width:25%;
+	float:left;
+	text-align:left;
+	margin-left:0px;
+
+}
+
+#filtersearch li{
+	list-style: none;
+	margin-left:100px;
+
+}
+
+
+div.divider_1
+{
+	width:10px;
+	height:auto;
+	display:inline-block;
+}
+
+.padding-top-10{
+	padding-top:10px;
+}
+
+.padding-bottom-10{
+	padding-bottom:10px;
+}
+
+.padding-left-10{
+	padding-left:525px;
+}
+
+
+
+
+
+
+
+
+a {
+	color: blue;
+}
+
+a:hover {
+	color: red;
+}
+
+
+input, textarea, select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+
+#signup_form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 360px;
+
+	font-size: 16px;
+
+
+}
+
+#signup_form .heading {
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#signup_form form {
+
+	background-color: grey;
+	padding: 10px;
+
+
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+
+}
+
+
+
+#signup_form form label {
+	font-weight: bold;
+	color: white;
+}
+
+#signup_form form input[type=text],input[type=password] {
+	width: 316px;
+	font-weight: bold;
+	padding: 8px;
+
+
+	border: 1px solid #FFF;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+#signup_form form input[type=submit] {
+	display: block;
+	margin: auto;
+	width: 200px;
+	font-size: 18px;
+	background-color: #FFF;
+	border: 1px solid #BBB;
+
+}
+
+#signup_form form input[type=submit]:hover {
+	border-color: #000;
+}
+
+#signup_form .error {
+	font-size: 13px;
+	color: #690C07;
+	font-style: italic;
+}
+
+#navigation{
+	font-family: 'Average Sans', sans-serif;
+	position:absolute;
+	top: 0px;
+
+	bottom: 0px;
+	background-color: whiteSmoke;
+	width: 310px;
+	margin-top:225px;
+	margin-left:932px;
+}
+
+#scrollContainer{
+	overflow-x: scroll;
+	bottom: 0px;
+	position: absolute;
+	top: 110px;
+}
+
+#copy{
+	display: inline-block;
+	width: 100%;
+	margin: 0 -10px 8px -10px;
+	position: relative;
+	-webkit-transform: skewy(-3deg);
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: 200ms all;
+	-moz-transform: skewy(-3deg);
+	-moz-backface-visibility: hidden;
+	-moz-transition: 200ms all;
+	-o-transform: skewy(-3deg);
+	-o-backface-visibility: hidden;
+	-o-transition: 200ms all;
+	-webkit-transform: skewy(-3deg);
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: 200ms all;
+	cursor: pointer;
+}
+
+#copy span:hover{
+	color: #CC3F14;
+}
+
+
+
+.panel-body {
+	height: 400px;
+}
+.panel-bodyy {
+	height: auto;
+	padding:5px;
+}
+
+#copy span{
+	font-weight: 800;
+	display: block;
+	padding: 8px 10px;
+	color: #333;
+	font-size: 35px;
+	text-align: center;
+	text-decoration: none;
+	position: relative;
+	z-index: 1;
+	text-shadow: 1px 1px 0px white,
+	2px 2px 0px #999,
+	3px 3px 0px white;
+	-webkit-transition: 1s all;
+	-moz-transition: 1s all;
+	-o-transition: 1s all;
+	-webkit-transition: 1s all;
+
+}
+
+#navigation label{
+	display: block;
+}
+
+#navigation input[type="text"]{
+	display: block;
+	width: 99%;
+	height: 23px;
+	font-size: 12px;
+	padding-left: 2px;
+}
+
+input[type="submit"] {
+	width: 309px;
+}
+
+.footer{
+	height:50px;
+	bottom:0px;
+	text-align:center;
+}
+
+.welcome1{
+	height:400px;
+	width:1100px;
+	margin-left:120px;
+}
+
+.contact{
+	height:600px;
+	width:1000px;
+	margin-left:150px;
+}
+
+.about{
+    height:auto;
+    width:1100px;
+    margin-left:120px;
+
+}
+
+.weather{
+    margin-left:100px;
+    width:1150px;
+}
+
+
+
+.button-send {
+	padding: 10px 15px;
+	background: #4479BA;
+	color: #FFF;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: solid 1px #20538D;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+.button-send:hover {
+	background: #356094;
+	border: solid 1px #2A4E77;
+	text-decoration: none;
+}
+.button-send:active {
+	-webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	background: #2E5481;
+	border: solid 1px #203E5F;
+}
+
+#facebookshare {
+    position: absolute;
+    top: 365px;
+    left: 100px;
+
+}
+
+
+#twittershare {
+    position: absolute;
+    width: 45px;
+    top: 355px;
+    left: 150px;
+
+}
+
+#googleplusshare {
+    position: absolute;
+    top: 365px;
+    left: 1150px;
+}
+
+#linkedinshare {
+    position: absolute;
+    top: 365px;
+    left:1100px;
+}
+
+#carouselcontainer {
+    width: 840px;
+    height: 325px;
+    margin-left: 250px;
+    text-align: center;
+    padding: 0px;
+
+}
+
+
+#carouselcontainer img {
+    width: 700px;
+    height: 275px;
+    border: 1px solid black;
+}
+
+
+
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+    height: 300px;
+}
+
+
+.rating{
+	height:auto;
+	width:500px;
+	margin-left:500px;
+	margin-top:-100px;
+}

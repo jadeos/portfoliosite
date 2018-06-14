@@ -1,0 +1,69 @@
+extends layout
+block content
+    //index.jade renders:
+     a carousel that shows all the artworks in the db,
+     a line chart displaying the year each artist was born
+     a pie chart showing the percentage of the total works for each artists.
+    //
+    div#main-content(style="background-color:lightgrey")
+        script(src="https://code.highcharts.com/highcharts.js")
+        script(src="https://code.highcharts.com/modules/exporting.js")
+        .panel.panel-default(style='background-color:grey;')
+            .panel-heading(style='background-color:lightgrey;')
+                h1.
+                    Welcome to Tate Gallery
+            .panel-body(style='background-color:grey;')
+                div.content
+                    div#carousel-example-generic.carousel.slide(style='margin-left:5%; margin-right:5%; margin-top:5%;', data-ride='carousel')
+                        ol.carousel-indicators
+                            //render the carousel
+                            -var n = 0
+                            while n < artworks.length
+                                if n == 0
+                                    li.active(data-target="#header-carousel",data-slide-to=n)
+                                    - n++
+                                else
+                                    li(data-target="#header-carousel",data-slide-to=n)
+                                    - n++
+                        // Wrapper for slides
+                        .carousel-inner(style=" width:100%; height: 305px; !important;")
+                            //render the carousel with 10 image (this value can change in the query to eg 20 etc)
+                            - var i = 0
+                            - for img in artworks
+                                if i == 0
+                                   .item.active
+                                       a(href = "/artworks/#" + '#{img.title}')
+                                           img(src='#{img.thumbnailUrl}' style ="margin-left:40%;  height:275px")
+                                           .carousel-caption(style="color:black;") Artwork By:  #{img.all_artists}
+                                       -i++
+                                else
+                                    .item
+                                        a(href = "/artworks/#"+'#{img.title}')
+                                            img(src='#{img.thumbnailUrl}' style ="margin-left:40%;  height:275px")
+                                            .carousel-caption(style="color:black;") Artwork By:  #{img.all_artists}
+                                     -i++
+
+                        // Controls
+                        a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+                            span.glyphicon.glyphicon-chevron-left
+                        a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+                            span.glyphicon.glyphicon-chevron-right
+
+        div#charts
+            //Render Highcharts
+            .panel.panel-default(style="width:50%; background-color:grey;" id ="chart1")
+                .panel-heading(style='background-color:lightgrey;')
+                .panel-body(style='background-color:grey;')
+                    //line chart
+                    div#containers
+                    each arts in artists
+                        //hidden input used to pass the variables to highcharts.js so that the charts could be rendered.
+                        input(type="hidden" class ="artists" name="#{arts.fc}" value="#{arts.fc}")
+                        input(type="hidden" class ="birth" name="#{arts.birthYear}" value="#{arts.birthYear}")
+                        input(type="hidden" class ="work" name="#{arts.totalWorks}" value="#{arts.totalWorks}")
+            .panel.panel-default(style="width:50%; background-color:grey; margin-left:50%; margin-top:-35%;" id ="chart2")
+                .panel-heading(style='background-color:lightgrey;')
+                .panel-body(style='background-color:grey;')
+                    //pie chart
+                    div#container2
+

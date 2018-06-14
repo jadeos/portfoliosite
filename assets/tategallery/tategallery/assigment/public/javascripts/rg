@@ -1,0 +1,62 @@
+   var elements = document.getElementsByClassName('artists');
+    var element = document.getElementsByClassName('birth');
+    var work = document.getElementsByClassName('work');
+    var years = [];
+    var names = [];
+    var stored = [];
+    var counter = 1;
+    for (var i = 0; i < elements.length; i++) {
+        names[i] = elements[i].name;
+        for (var x = 0; x < element.length; x++) {
+            years[x] = element[x].name;
+            //eliminate duplicated years
+            if (years[x] == years[x + 1]) {
+                years[x] = years[x + 1];
+
+                counter += 1;
+            }
+            stored.push(counter);
+        }
+    }
+    years.sort(function (a, b) {
+        return a - b
+    });
+    names.sort(function (a, b) {
+        return a - b
+    });
+
+    //line chart
+    Highcharts.chart('container', {
+
+        title: {
+            text: 'Number of Artist Born '
+        },
+
+        subtitle: {
+            text: 'per given year'
+        },
+
+        yAxis: {
+            title: {
+                text: 'Number of Artists'
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle'
+        },
+
+        plotOptions: {
+            series: {
+                pointStart: 1728
+            }
+        },
+
+        series: [{
+            name: 'Artist',
+            data: stored
+        }
+        ]
+
+    });

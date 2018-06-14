@@ -1,0 +1,35 @@
+extends layout
+block content
+    //default theme
+    div#greytheme
+        div#gallery
+            .panel.panel-default(style='width:80%; margin-left:10%; background-color:grey;')
+                .panel-heading(style='background-color:lightgrey;')
+                    h1.
+                        Artwork Directory
+                    br
+                .panel-body(style='background-color:grey;')
+                    //render data from collection
+                    each art in artworks
+                        a(id='#{art.title}')
+                        div.tategallery
+                            div(id='#{art.title}')
+                            h2=art.title
+                            strong Artists:
+                            | #{art.all_artists}
+                            br
+                            strong Aquisition Year:
+                            | #{art.acquisitionYear}
+                            br
+                            strong URL:
+                            a(href='#{art.url}' class="artwork_url")= art.url
+                            br
+                            Strong Medium:
+                            | #{art.medium}
+                            br
+                            strong Dimensions:
+                            | #{art.dimensions}
+                            br
+                            a(href="#{art.url}")
+                                img(src="#{art.thumbnailUrl}" class ="artwork_image")
+
